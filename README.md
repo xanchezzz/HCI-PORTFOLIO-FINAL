@@ -5,7 +5,7 @@
 This is a single-page responsive portfolio website created for the Week 06 HCI Lab Assignment (Binus International University). It presents my profile, my experience in charity and school events, my skills, and my contact information. It is built with **HTML5** and **CSS3** only, with no JavaScript.
 
 - 🔗 Portfolio website (GitHub Pages): [https://xanchezzz.github.io/HCI-PORTFOLIO-FINAL/)
-- 🎨 Website design (Figma): [Click Here](PASTE-YOUR-FIGMA-LINK-HERE)
+- 🎨 Website design (Figma): [https://www.figma.com/make/iHIvjJ3jl4jNh5qvAOgOaB/Portfolio-website-sketch?t=HMEk8uCZe0kK2CSP-1)
 
 ## 🎯 Purpose
 
@@ -71,11 +71,10 @@ portfolio/
 │
 ├── index.html
 ├── style.css
-├── images/
-│   ├── profile.jpg
-│   ├── school-charity.jpg
-│   ├── kernel-journal.jpg
-│   └── carnival-charity.jpg
+├──profile.jpg
+├──school-charity.jpg
+├──kernel-journal.jpg
+├──carnival-charity.jpg
 └── README.md
 ```
 
