@@ -93,13 +93,4 @@ portfolio/
 ## 📸 Screenshots
 
 **Desktop**
-
-![Desktop view](images/screenshot-desktop.png)
-
-**Tablet / Mobile**
-
-![Mobile view](images/screenshot-mobile.png)
-
-**Figma design**
-
-![Figma design](images/screenshot-figma.png
+(webview.png)
