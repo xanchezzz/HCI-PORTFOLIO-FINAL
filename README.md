@@ -72,10 +72,12 @@ portfolio/
 ├── index.html
 ├── style.css
 ├──profile.jpg
+├──script.js
 ├──school-charity.jpg
 ├──kernel-journal.jpg
 ├──carnival-charity.jpg
 └── README.md
+
 ```
 
 ## ✅ Testing and Validation
