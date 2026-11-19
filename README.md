@@ -4,88 +4,79 @@ A single-page, responsive personal portfolio built for the Week 06 HCI lab assig
 
 ![Portfolio preview](webview.png)
 
+**Live site:** https://xanchezzz.github.io/HCI-PORTFOLIO-FINAL/
+**Repository:** https://github.com/xanchezzz/HCI-PORTFOLIO-FINAL
+
 ## Purpose
 
-The goal of this project is to:
+The portfolio presents my participation and contributions in charity and event organizations. It is aimed at event recruiters who are looking for committee members.
 
-- Present my experience in event organizing in a clear and professional way
-- Apply what I learned about HTML structure, the CSS box model, Flexbox, and responsive design
-- Create a portfolio I can use when applying to join event committees
+## Sections
 
-## 👥 Target Audience
+- **Sidebar:** profile photo, name, links, contact details, and the accessibility controls
+- **About Me:** a short introduction
+- **Experience:** cards for School Charity, Kernel Journal, and Carnival for Charity
+- **Skills:** Leadership, Teamwork, Python, and HTML
+- **Contact:** an email button and a quick message pop-up
 
-- ✅ Event recruiters and organizers looking for committee members
+## Features
 
-## 🧱 Technologies Used
+- **JavaScript-built content:** the experience cards and skills are generated from data arrays instead of being written by hand in the HTML
+- **Dark mode toggle:** switches between the light orange theme and a dark theme, and remembers the visitor's choice
+- **Text size slider:** changes the text size from 80% to 150% while dragging, and remembers the setting
+- **Message pop-up:** a form with name, email, and message fields, with error messages if something is missing or invalid; it closes with the × button, the Escape key, or a click outside the box
+- **Responsive layout:** adapts to desktop, tablet, and mobile screens
 
-- HTML5 (semantic tags such as `header`, `aside`, `main`, `section`, `footer`)
-- CSS3 (Flexbox, box model, media queries, transitions, hover effects)
-- Google Fonts (Jost)
-- Figma (layout and color planning)
+## HCI Principles Applied
 
-## 📐 Layout & Sections
+- **User control and accessibility:** visitors choose their own theme and text size
+- **Feedback:** the buttons change on hover, the toggle text updates, and the form shows a confirmation message
+- **Error prevention and recovery:** the form checks each field and explains how to fix a mistake
+- **Consistency:** the buttons share one rounded style and the colors follow a single orange scheme
+- **Keyboard support:** the pop-up can be closed with the Escape key and moves keyboard focus in and out
 
-The website has a sidebar on the left and the main content on the right (on desktop):
+## Built With
 
-- **Sidebar (Header)** – Profile photo, name, tagline, GitHub and LinkedIn links, contact details, and a "Contact Me" button
-- **About Me** – A short introduction and what I can bring to an event team
-- **Experience** – Three cards (School Charity, Kernel Journal, Carnival for Charity), each with a photo, year, role, and description
-- **Skills** – Skills shown as small tags
-- **Contact** – A short message and an email link
-- **Footer** – Copyright
+- HTML
+- CSS (Flexbox, media queries, Google Font: Jost)
+- JavaScript (DOM manipulation, events, `localStorage`)
 
-## 🎨 Design Choices
-
-- **Color scheme:** a light orange theme (pale orange background, white cards, orange accents)
-- **Font:** Jost, a free Google Font similar to Futura, with `sans-serif` as a fallback
-- **Style:** white rounded cards with soft shadows, and hover effects on the buttons, experience cards, and skill tags
-
-## 📱 Responsiveness
-
-The site was tested in browser DevTools on:
-
-- **Desktop** – sidebar and main content side by side
-- **Tablet (up to 768px)** – the sidebar moves above the main content, and the layout becomes a single column
-- **Mobile (up to 480px)** – smaller padding so content fits comfortably
-
-Responsiveness is done with Flexbox (`flex`, `flex-wrap`, `gap`), relative units (`%`, `rem`), and media queries.
-
-## 🧪 How to Run Locally
-
-1. Open a code editor such as Visual Studio Code.
-2. Open the terminal and clone the repository:
+## Project Structure
 
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-```
-
-3. Open `index.html` in your browser, or use the Live Server extension in VS Code.
-
-## 📂 Folder Structure
-
-```
-portfolio/
-│
-├── index.html
-├── style.css
-├──profile.jpg
-├──school-charity.jpg
-├──kernel-journal.jpg
-├──carnival-charity.jpg
+HCI-PORTFOLIO-FINAL/
+├── index.html           # Page structure (empty containers for cards and skills)
+├── style.css            # Styling, dark mode, and responsive layout
+├── script.js            # Portfolio data, cards, dark mode, text size, and message pop-up
+├── profile.jpeg
+├── school-charity.png
+├── kernel-journal.png
+├── carnival-charity.png
+├── webview.png          # Screenshot used in this README
 └── README.md
-
 ```
 
 ## How It Works
 
-The experience cards and skills are not written by hand in the HTML. Instead, `script.js` stores them in the `projects` and `skills` arrays, loops through each one, and inserts the generated HTML into the page. To add a new experience, add one more object to the `projects` array.
+`script.js` stores the experiences in a `projects` array and the skills in a `skills` array. It loops through each one and inserts the generated HTML into the page. To add a new experience, add one more object to the `projects` array.
+
+The dark mode and text size settings are saved in the browser with `localStorage`, so they stay the same after a refresh.
+
+The message form has no server, so pressing Send opens the visitor's email app with the message already filled in.
 
 ## Run Locally
 
-1. Clone the repository: `git clone https://github.com/xanchezzz/HCI-PORTFOLIO-FINAL.git`
+1. Clone the repository:
+   ```
+   git clone https://github.com/xanchezzz/HCI-PORTFOLIO-FINAL.git
+   ```
 2. Open the folder in VS Code.
-3. Open `index.html` in a browser (or use the Live Server extension).
+3. Open `index.html` in a browser, or use the Live Server extension.
+
+`index.html`, `style.css`, and `script.js` must stay in the same folder for the page to work.
 
 ## Author
 
-Glen Alexander, Computer Science, Binus International University
+**Glen Alexander**
+Computer Science, Binus International University
+Jakarta, Indonesia
