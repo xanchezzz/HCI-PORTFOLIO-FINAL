@@ -34,6 +34,13 @@
             </div>
 
             <a href="#contact" class="button">Contact Me</a>
+
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+
+            <div class="text-size">
+                <label for="text-size-slider">Text size: <span id="text-size-value">100%</span></label>
+                <input type="range" id="text-size-slider" min="80" max="150" step="10" value="100">
+            </div>
         </aside>
 
         <main>
@@ -57,7 +64,10 @@
             <section id="contact">
                 <h2>Contact</h2>
                 <p>Feel free to contact me for further information!</p>
-                <a href="mailto:Glenalexander31@gmail.com">Send me an email</a>
+                <div class="contact-buttons">
+                    <a href="mailto:Glenalexander31@gmail.com" class="button">Send me an email</a>
+                    <button id="open-message" class="button message-button" type="button">Leave a quick message</button>
+                </div>
             </section>
         </main>
 
@@ -66,6 +76,33 @@
     <footer>
         <p>&copy; 2026 Glen Alexander</p>
     </footer>
-    <script src="script.js"></script>
+
+    <div id="message-modal" class="modal" hidden>
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button id="close-message" class="modal-close" type="button" aria-label="Close message window">&times;</button>
+            <h2 id="modal-title">Leave a Message</h2>
+
+            <form id="message-form" novalidate>
+                <label for="msg-name">Name</label>
+                <input type="text" id="msg-name" autocomplete="name">
+                <p class="error" id="error-name"></p>
+
+                <label for="msg-email">Your email</label>
+                <input type="email" id="msg-email" autocomplete="email">
+                <p class="error" id="error-email"></p>
+
+                <label for="msg-text">Message</label>
+                <textarea id="msg-text" rows="5"></textarea>
+                <p class="error" id="error-text"></p>
+
+                <button type="submit" class="button">Send</button>
+            </form>
+
+            <p class="form-note" id="form-note"></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer
+        onerror="document.getElementById('project-list').innerHTML = '<p>Could not load script.js. Make sure it is in the same folder as index.html.</p>'"></script>
 </body>
 </html>
