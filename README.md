@@ -6,36 +6,74 @@ A single-page, responsive personal portfolio built for the Week 06 HCI lab assig
 
 ## Purpose
 
-The portfolio presents my participation and contributions in charity and event organizations, aimed at event recruiters who are looking for committee members.
+The goal of this project is to:
 
-## Features
+- Present my experience in event organizing in a clear and professional way
+- Apply what I learned about HTML structure, the CSS box model, Flexbox, and responsive design
+- Create a portfolio I can use when applying to join event committees
 
-- Sidebar with profile, contact details, and links, plus main content cards (About, Experience, Skills, Contact)
-- Experience cards and skills are generated with JavaScript from data arrays
-- Dark mode toggle that remembers the visitor's choice
-- Text size slider (80% to 150%) that remembers the visitor's choice
-- Message pop-up with form validation and friendly error messages
-- Responsive layout that adapts to tablet and mobile screens
-- Light orange color scheme and Jost font
+## 👥 Target Audience
 
-## Built With
+- ✅ Event recruiters and organizers looking for committee members
 
-- HTML
-- CSS
-- JavaScript
+## 🧱 Technologies Used
 
-## Project Structure
+- HTML5 (semantic tags such as `header`, `aside`, `main`, `section`, `footer`)
+- CSS3 (Flexbox, box model, media queries, transitions, hover effects)
+- Google Fonts (Jost)
+- Figma (layout and color planning)
+
+## 📐 Layout & Sections
+
+The website has a sidebar on the left and the main content on the right (on desktop):
+
+- **Sidebar (Header)** – Profile photo, name, tagline, GitHub and LinkedIn links, contact details, and a "Contact Me" button
+- **About Me** – A short introduction and what I can bring to an event team
+- **Experience** – Three cards (School Charity, Kernel Journal, Carnival for Charity), each with a photo, year, role, and description
+- **Skills** – Skills shown as small tags
+- **Contact** – A short message and an email link
+- **Footer** – Copyright
+
+## 🎨 Design Choices
+
+- **Color scheme:** a light orange theme (pale orange background, white cards, orange accents)
+- **Font:** Jost, a free Google Font similar to Futura, with `sans-serif` as a fallback
+- **Style:** white rounded cards with soft shadows, and hover effects on the buttons, experience cards, and skill tags
+
+## 📱 Responsiveness
+
+The site was tested in browser DevTools on:
+
+- **Desktop** – sidebar and main content side by side
+- **Tablet (up to 768px)** – the sidebar moves above the main content, and the layout becomes a single column
+- **Mobile (up to 480px)** – smaller padding so content fits comfortably
+
+Responsiveness is done with Flexbox (`flex`, `flex-wrap`, `gap`), relative units (`%`, `rem`), and media queries.
+
+## 🧪 How to Run Locally
+
+1. Open a code editor such as Visual Studio Code.
+2. Open the terminal and clone the repository:
 
 ```
-HCI-PORTFOLIO-FINAL/
-├── index.html      # Page structure (empty containers for cards and skills)
-├── style.css       # Styling, dark mode, and responsive layout
-├── script.js       # Portfolio data, cards, dark mode, and message pop-up
-├── profile.jpeg
-├── school-charity.png
-├── kernel-journal.png
-├── carnival-charity.png
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+```
+
+3. Open `index.html` in your browser, or use the Live Server extension in VS Code.
+
+## 📂 Folder Structure
+
+```
+portfolio/
+│
+├── index.html
+├── style.css
+├──profile.jpg
+├──school-charity.jpg
+├──kernel-journal.jpg
+├──carnival-charity.jpg
 └── README.md
+
 ```
 
 ## How It Works
